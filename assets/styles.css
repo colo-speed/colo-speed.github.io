@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'DIN';
+  src: url('/assets/fonts/DIN-Black.woff2') format('woff2'),
+      url('/assets/fonts/DIN-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0;
+      transform: translateY(-3%)
+  } 
+  100% { 
+      opacity: 1; 
+      transform: translateY(0)
+   } 
+} 
+
+html {
+  min-height: 100%;
+  background-color: #003572;
+}
+
+body {
+  width: 100%;
+  background-color: #00437A;
+  text-align: center;
+  font-family: 'DIN', "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  background-image: url('/assets/body.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 40rem;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 4rem 1rem 5rem 1rem;
+}
+
+.content div {
+  animation: fadeInAnimation ease 1s ;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+.content div+div+div {
+  animation: fadeInAnimation ease 1.5s ;
+}
+
+.content div+div+div {
+  animation: fadeInAnimation ease 2s ;
+}
+
+.content div+div+div+div {
+  animation: fadeInAnimation ease 2.5s ;
+}
+
+.content div+div+div+div+div {
+  animation: fadeInAnimation ease 3s ;
+}
+
+.content div+div+div+div+div+div {
+  animation: fadeInAnimation ease 3.5s ;
+}
+
+
+.diff-font {
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+.cl-white {
+  color: white;
+}
+
+.cl-blue {
+  color: #00BEF2;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sz500 {
+  font-size: 8rem;
+  line-height: 6.2rem;
+}
+
+.sz350 {
+  font-size: 5.5rem;
+  line-height: 4.5rem;
+}
+
+.sz200 {
+  font-size: 3rem;
+  line-height: 2.8rem;
+}
+
+.sz130 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.sz400 {
+  font-size: 6.2rem;
+  line-height: 6.2rem;
+}
+
+.sz75 {
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+}
+
+.sz100 {
+  font-size: 1.85rem;
+  line-height: 2rem;
+}
+
+.sz90 {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
+a {
+  color: #00BEF2;
+}
+
+.logos {
+  text-align: center;
+  padding: 1rem;
+  animation: fadeInAnimation ease 3s ;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+.logos img {
+  height: 2.8rem;
+  margin: 0 1rem;
+}
